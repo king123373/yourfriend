@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARAN - Virtual Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle, #1a1a2e, #16213e);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .assistant .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #00aaff;
+            padding: 5px;
+            box-shadow: 0 0 10px #00aaff;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .assistant .avatar:hover {
+            transform: scale(1.1);
+        }
+
+        .assistant h1 {
+            font-size: 2.5rem;
+            margin-top: 15px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #00aaff;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        .assistant p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+
+        .interaction {
+            margin-top: 30px;
+        }
+
+        .talk {
+            background: #00aaff;
+            border: none;
+            padding: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 15px #00aaff;
+            transition: 0.3s;
+        }
+
+        .talk:hover {
+            background: #0099dd;
+            box-shadow: 0 0 20px #0099dd;
+        }
+
+        .talk i {
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .content {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-shadow: 0 0 5px #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="assistant">
+            <img src="giphy.webp" alt="KARAN Avatar" class="avatar">
+            <h1>KARAN</h1>
+            <p>Your AI-powered assistant</p>
+        </div>
+        <div class="interaction">
+            <button class="talk"><i class="fas fa-microphone"></i></button>
+            <h2 class="content">Tap the mic and speak...</h2>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
